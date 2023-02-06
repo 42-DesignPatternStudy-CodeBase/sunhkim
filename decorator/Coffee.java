@@ -9,6 +9,6 @@ public class Coffee implements Berverage {
 
     @Override
     public String add() {
-        return bean;
+        return bean + "Americano";
     }
 }
