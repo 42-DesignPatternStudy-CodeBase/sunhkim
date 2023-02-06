@@ -1,7 +1,7 @@
 package singleton;
 
 public class Singleton {
-    private singleton() {}
+    private Singleton() {}
 
     private static class SingletonHelper {
         private static final Singleton INSTANCE = new Singleton();
