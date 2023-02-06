@@ -1,3 +1,5 @@
-public interface CarFactory {
+package factory;
 
+public interface CarFactory {
+    
 }
