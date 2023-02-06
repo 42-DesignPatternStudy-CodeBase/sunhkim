@@ -12,18 +12,18 @@ public class CarTest {
         System.out.println(genesis);
     }
 
-    public Car produceCar(String name) {
+    public static Car produceCar(String name) {
         Car car = null;
         if(name.equalsIgnoreCase("Sonata")) {
             SonataFactory factory = new SonataFactory();
             car = factory.produceCar();
         }
         else if(name.equalsIgnoreCase("Grandeur")) {
-            SonataFactory factory = new SonataFactory();
+            GrandeurFactory factory = new GrandeurFactory();
             car = factory.produceCar();
         }
         else if(name.equalsIgnoreCase("Genesis")) {
-            SonataFactory factory = new SonataFactory();
+            GenesisFactory factory = new GenesisFactory();
             car = factory.produceCar();
         }
         else {
