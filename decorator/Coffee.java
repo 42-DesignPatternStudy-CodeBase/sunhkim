@@ -1,7 +1,7 @@
 package decorator;
 
 public class Coffee implements Berverage {
-    protect String bean = "";
+    protected String bean = "";
 
     public Coffee(String bean) {
         this.bean = bean;
