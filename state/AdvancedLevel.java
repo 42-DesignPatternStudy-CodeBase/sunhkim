@@ -1,6 +1,15 @@
 package state;
 
 public class AdvancedLevel implements PlayerLevel{
+    private static AdvancedLevel instance;
+
+    public static AdvancedLevel getInstance() {
+        if (instance == null) {
+            instance = new AdvancedLevel();
+        }
+        return instance;
+    }
+
     @Override
     public void run() {
         System.out.println("빨리 달립니다.");

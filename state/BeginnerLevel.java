@@ -1,6 +1,15 @@
 package state;
 
 public class BeginnerLevel implements PlayerLevel {
+    private static BeginnerLevel instance;
+
+    public static BeginnerLevel getInstance() {
+        if (instance == null) {
+            instance = new BeginnerLevel();
+        }
+        return instance;
+    }
+
     @Override
     public void run() {
         System.out.println("천천히 달립니다.");

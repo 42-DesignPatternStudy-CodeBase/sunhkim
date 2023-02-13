@@ -1,6 +1,15 @@
 package state;
 
 public class SuperLevel implements PlayerLevel{
+    private static SuperLevel instance;
+
+    public static SuperLevel getInstance() {
+        if (instance == null) {
+            instance = new SuperLevel();
+        }
+        return instance;
+    }
+
     @Override
     public void run() {
         System.out.println("엄청 빨리 달립니다.");
