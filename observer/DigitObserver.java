@@ -1,4 +1,4 @@
-package observerPattern;
+package observer;
 
 public class DigitObserver implements Observer {
 

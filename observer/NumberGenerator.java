@@ -1,4 +1,4 @@
-package observerPattern;
+package observer;
 
 import java.util.*;
 
