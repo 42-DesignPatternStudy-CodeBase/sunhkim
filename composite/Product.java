@@ -14,7 +14,7 @@ public class Product extends ProductCategory {
 
 	@Override
 	public void removeProduct(ProductCategory product) {
-		System.err.println("Cannot remove product in product");
+		System.err.println("Cannot remove product from product");
 	}
 
 	@Override
