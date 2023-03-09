@@ -4,27 +4,27 @@ import java.util.ArrayList;
 
 /* Composite */
 public class Category extends ProductCategory {
-	private ArrayList<ProductCategory> childs;
+	private ArrayList<ProductCategory> children;
 
 	public Category(int id, String name, int price) {
 		super(id, name, price);
-		childs = new ArrayList<ProductCategory>();
+		children = new ArrayList<ProductCategory>();
 	}
 
 	@Override
 	public void addProduct(ProductCategory product) {
-		childs.add(product);
+		children.add(product);
 	}
 
 	@Override
 	public void removeProduct(ProductCategory product) {
-        childs.remove(product);
+        children.remove(product);
 	}
 
 	@Override
 	public int getCount() {
 		int totalCount = 0;
-		for (ProductCategory child : childs) {
+		for (ProductCategory child : children) {
 			totalCount += child.getCount();
 		}
 		return totalCount;
@@ -38,7 +38,7 @@ public class Category extends ProductCategory {
 	@Override
 	public int getPrice() {
 		int totalPrice = 0;
-		for (ProductCategory child : childs) {
+		for (ProductCategory child : children) {
 			totalPrice += child.getPrice();
 		}
 		return totalPrice;
