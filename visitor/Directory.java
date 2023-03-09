@@ -5,12 +5,10 @@ import java.util.Iterator;
 
 public class Directory extends Entry {
     String name;
-    int size;
 	private ArrayList<Entry> list = new ArrayList<Entry>();
 
 	public Directory(String name) {
 		this.name = name;
-        this.size = 0;
 	}
 
 	@Override
